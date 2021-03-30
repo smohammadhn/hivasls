@@ -1,0 +1,56 @@
+/* ------------------ Misc configurations ---------------------- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* ------------------ Typography ---------------------- */
+body {
+  font-size: 62.5%;
+  background-color: #e5e7e2;
+  font-size: 16px;
+  color: #111;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+a {
+  color: #e5bfed;
+}
+/* ------------------ Buttons ---------------------- */
+.btn {
+
+}
+.btn-primary {
+  
+}
+/* ------------------ navbar ---------------------- */
+
+/* ------------------ header block ---------------------- */
+img {
+  width: 100%;
+  height: auto;
+}
+.header__image {
+  background-image: url(images/student@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 8px 8px #e5e7e2 inset;
+  height: 570px;
+  width: 570px;
+}
+/* ------------------ why-us block ---------------------- */
+
+/* ------------------ Footer block ---------------------- */
