@@ -1,56 +1,221 @@
 /* ------------------ Misc configurations ---------------------- */
-
+:root {
+  --yellow-light: #ffff1a;
+  --yellow-medium: #e6e600;
+  --yellow-dark: #999900;
+  --color-bg: #e4e1d8;
+  --logo-size: 80px;
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 /* ------------------ Typography ---------------------- */
-body {
+html {
   font-size: 62.5%;
-  background-color: #e5e7e2;
-  font-size: 16px;
+}
+body {
+  background-color: var(--color-bg);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 2rem;
   color: #111;
 }
 h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 4.8rem;
+  font-size: 6rem;
+  color: #312933;
+  margin: 1rem 0;
+}
+h2,
+h3 {
+  text-transform: capitalize;
+  color: #111;
+  margin: 1rem 0;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 h3 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 a {
   color: #e5bfed;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.institute-name {
+  font-size: 4.5rem;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 /* ------------------ Buttons ---------------------- */
 .btn {
-
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
 }
 .btn-primary {
-  
+  background-color: var(--yellow-dark);
+  border: 2px solid var(--yellow-dark);
+  color: #fff;
+  border-radius: 30px;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  transition: all 0.3s;
 }
-/* ------------------ navbar ---------------------- */
+.btn-primary:hover {
+  background-color: #fff;
+}
+.btn-primary:hover a {
+  color: var(--yellow-dark);
+}
+/* ------------------ cards ---------------------- */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 8px 0px #c9c90f;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card > img {
+  width: 60%;
+}
+.card-info {
+}
 
+/* ------------------ navbar ---------------------- */
+.logo {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--yellow-dark);
+  margin-bottom: 2rem;
+}
+.logo > img {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 8px 8px white;
+  border-radius: 50%;
+}
+.logo:hover > img {
+  transform: rotate(360deg);
+}
 /* ------------------ header block ---------------------- */
 img {
   width: 100%;
   height: auto;
 }
+.block-header-container {
+  background-color: #d4d6d3;
+  padding: 4rem 0 10rem;
+}
+.block-header {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+.header__content {
+  text-align: center;
+}
 .header__image {
-  background-image: url(images/student@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-shadow: 0px 0px 8px 8px #e5e7e2 inset;
-  height: 570px;
-  width: 570px;
+  clip-path: inset(0 0 0 0 round 0 20% 0 20%);
+  margin: 0 1rem;
+}
+.header__btn {
+  margin-top: 0.5rem;
+}
+.sub-heading {
+  font-size: 2.5rem;
+}
+.block-skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+.block-skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+@media screen and (min-width: 1024px) {
+  .block-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* ------------------ why-us block ---------------------- */
+.block-why-us {
+  margin-bottom: 8rem;
+}
+.why-us-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.why-us__item {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  padding: 1rem;
+}
+.why-us__number {
+  position: absolute;
+  font-size: 20rem;
+  left: -50%;
+  right: -50%;
+  top: 120px;
+  margin: 0;
+  transform: translatey(-50%);
+  opacity: 0.5;
+  color: var(--yellow-light);
+}
+@media screen and (min-width: 1024px) {
+  .why-us-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ------------------ information block ---------------------- */
 
-/* ------------------ Footer block ---------------------- */
+.information-container {
+  display: grid;
+  margin-top: 8rem;
+}
+.card-container {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .information-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .card-container {
+    transform: scale(0.7);
+  }
+  .information-container {
+    display: grid;
+    margin-top: 3rem;
+  }
+}
+
+/* ------------------ Footer block ---------------------- *
