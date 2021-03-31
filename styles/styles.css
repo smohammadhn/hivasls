@@ -29,6 +29,7 @@ body {
 p {
   font-size: 2rem;
   color: #111;
+  line-height: 1.5;
 }
 h1 {
   text-transform: uppercase;
@@ -209,9 +210,6 @@ img {
 @media screen and (min-width: 1024px) {
   .information-container {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-  .card-container {
-    transform: scale(0.7);
   }
   .information-container {
     margin-top: 3rem;
