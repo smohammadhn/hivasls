@@ -1,3 +1,4 @@
+@import url(./normalize.css);
 /* ------------------ Misc configurations ---------------------- */
 :root {
   --yellow-light: #ffff1a;
