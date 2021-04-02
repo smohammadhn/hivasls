@@ -189,7 +189,6 @@ img {
 .header__image {
   clip-path: inset(0 0 0 0 round 0 20% 0 20%);
   margin: 3rem 1rem;
-  order: -1;
 }
 .sub-heading {
   font-size: 2.5rem;
@@ -206,6 +205,9 @@ img {
 @media screen and (min-width: 1024px) {
   .block-header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .header__image {
+    order: -1;
   }
 }
 /* ------------------ why-us block ---------------------- */
