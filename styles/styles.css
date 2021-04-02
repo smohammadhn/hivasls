@@ -20,31 +20,31 @@
 
 @font-face {
   font-family: Samim;
-  src: url('/fonts/Samim.eot');
-  src: url('/fonts/Samim.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/Samim.woff2') format('woff2'),
-       url('/fonts/Samim.woff') format('woff'),
-       url('/fonts/Samim.ttf') format('truetype');
+  src: url("/fonts/Samim.eot");
+  src: url("/fonts/Samim.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Samim.woff2") format("woff2"),
+    url("/fonts/Samim.woff") format("woff"),
+    url("/fonts/Samim.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: Samim;
-  src: url('/fonts/Samim-Bold.eot');
-  src: url('/fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/Samim-Bold.woff2') format('woff2'),
-       url('/fonts/Samim-Bold.woff') format('woff'),
-       url('/fonts/Samim-Bold.ttf') format('truetype');
+  src: url("/fonts/Samim-Bold.eot");
+  src: url("/fonts/Samim-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Samim-Bold.woff2") format("woff2"),
+    url("/fonts/Samim-Bold.woff") format("woff"),
+    url("/fonts/Samim-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: Samim;
-  src: url('/fonts/Samim-Medium.eot');
-  src: url('/fonts/Samim-Medium.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/Samim-Medium.woff2') format('woff2'),
-       url('/fonts/Samim-Medium.woff') format('woff'),
-       url('/fonts/Samim-Medium.ttf') format('truetype');
+  src: url("/fonts/Samim-Medium.eot");
+  src: url("/fonts/Samim-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Samim-Medium.woff2") format("woff2"),
+    url("/fonts/Samim-Medium.woff") format("woff"),
+    url("/fonts/Samim-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
@@ -66,9 +66,9 @@ p {
 h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 9rem;
   color: #312933;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 h2,
 h3 {
@@ -92,13 +92,10 @@ a {
 .link-small {
   font-size: 1.8rem;
 }
-.institute-name {
-  font-size: 4.5rem;
-}
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  margin-bottom: 6rem;
+  font-weight: bold;
 }
 .center {
   text-align: center;
@@ -168,7 +165,7 @@ img {
 }
 .block-header-container {
   background-color: #d4d6d3;
-  padding: 4rem 0 10rem;
+  padding: 4rem 0 6rem;
 }
 .block-header {
   display: grid;
@@ -182,6 +179,7 @@ img {
 .header__image {
   clip-path: inset(0 0 0 0 round 0 20% 0 20%);
   margin: 3rem 1rem;
+  order: -1;
 }
 .sub-heading {
   font-size: 2.5rem;
@@ -218,13 +216,16 @@ img {
 .why-us__number {
   position: absolute;
   font-size: 20rem;
-  left: -50%;
-  right: -50%;
+  left: 0;
+  right: 0;
   top: 120px;
   margin: 0;
   transform: translatey(-50%);
   opacity: 0.5;
   color: var(--yellow-light);
+}
+.why-us__title {
+  white-space: nowrap;
 }
 @media screen and (min-width: 1024px) {
   .why-us-container {
@@ -253,7 +254,7 @@ img {
 .line {
   border-bottom: 2px solid var(--yellow-light);
   width: 300px;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 .block-footer {
   background: var(--yellow-dark);
@@ -268,6 +269,9 @@ img {
 .footer__about {
   padding: 3rem;
   order: 2;
+}
+.footer__about p {
+  line-height: 2.1;
 }
 .footer__about *,
 .footer__contactUs * {
@@ -297,6 +301,11 @@ img {
 .contactUs-media__number {
   font-size: 1.6rem;
   text-decoration: none;
+  color: #bebebe;
+}
+.contactUs-media__number:hover {
+  color: #fff;
+  transform: scale(1.01);
 }
 .red {
   color: var(--yellow-light);
@@ -324,3 +333,10 @@ img {
 .copyright-container {
   padding: 1rem;
 }
+.copyright-container p + p {
+  margin-top: 1rem;
+}
+.designer, .designer a {
+  font-size: 1.4rem;
+}
+
