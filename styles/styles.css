@@ -86,12 +86,16 @@ h3 {
 }
 a {
   color: #e5bfed;
-  font-family: "Samim", Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
-.link-small {
-  font-size: 1.8rem;
+strong, em {
+  text-decoration: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-family: inherit;
 }
+
+/* ------------------ Blocks ---------------------- */
 .heading {
   text-align: center;
   margin-bottom: 6rem;
@@ -99,6 +103,12 @@ a {
 }
 .center {
   text-align: center;
+}
+.link-small {
+  font-size: 1.8rem;
+}
+.keywords {
+  display: none;
 }
 /* ------------------ Buttons ---------------------- */
 .btn {
